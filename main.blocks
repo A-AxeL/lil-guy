@@ -1,0 +1,43 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="input_logo_event" id="3FaK=O!%vYWA`AF-]wwW" x="39" y="68"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="V/H$C{MyZ)f[Q(PdQjaH"><mutation name="Mouth Open" functionid="s__{JxEf+PFwd+wE#nMn"></mutation></block></statement></block><block type="function_definition" id="@nPuy7z.[)gP){uc]wXR" x="641" y="85"><mutation name="Neutral Face" functionid="o1{Jm:zEwz+p-|,IrtDj"></mutation><field name="function_name">Neutral Face</field><statement name="STACK"><block type="device_show_leds" id="V|Ij2|Y?[mcxLe,:U]}i"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></statement></block><block type="function_definition" id="EwIXc#|a(o=n`F._ZL-Q" x="941" y="88"><mutation name="Blink" functionid="w-%XO@4$0@9(c,gDwFv0"></mutation><field name="function_name">Blink</field><statement name="STACK"><block type="device_show_leds" id=":X9OEoizVF)nlvD+B)0L"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="device_pause" id="vwqWD+SRU_cHCn(hYHB3"><value name="pause"><shadow type="timePicker" id="[NUiFN{ZkzsfmGrujTz)"><field name="ms">100</field></shadow></value><next><block type="device_show_leds" id=":*]^l8_?1)b)+YP|)CA+"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="device_pause" id="vh(RBo$4cZ%*wKTN5$S["><value name="pause"><shadow type="timePicker" id="ol/{#dV75WFkJTVGXho0"><field name="ms">10</field></shadow></value><next><block type="device_show_leds" id="Wzrw`UrqB/zAfxbX}f_("><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="function_definition" id=",7Gj^Ze)|3BP^#N:}oJw" x="401" y="385"><mutation name="Mouth Open" functionid="s__{JxEf+PFwd+wE#nMn"></mutation><field name="function_name">Mouth Open</field><statement name="STACK"><block type="device_show_leds" id="dK9ic^kGH*G^%P+L9lv,"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="device_pause" id="Q3F*24bx!veaagTh9;F."><value name="pause"><shadow type="timePicker" id="RO2@24#G;f}wIw9vuZ{P"><field name="ms">100</field></shadow></value><next><block type="music_playable_play" id="fa(EaZ$EM8O|B+w^V4cN"><field name="playbackMode">music.PlaybackMode.InBackground</field><value name="toPlay"><shadow type="soundExpression_createSoundExpression" id="DyiynSizbDGtA,rY^l#]" inline="true"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="waveShape">WaveShape.Square</field><field name="effect">SoundExpressionEffect.Tremolo</field><field name="interpolation">InterpolationCurve.Curve</field><data>{"commentRefs":[],"fieldData":{"waveShape":"{\"duration\":200,\"startFrequency\":1110.1660806415262,\"endFrequency\":2619.078668344351,\"startVolume\":137.87186861905184,\"endVolume\":0,\"wave\":\"square\",\"interpolation\":\"curve\",\"effect\":\"tremolo\"}"}}</data><value name="startFrequency"><shadow type="math_number_minmax" id="XC%?NZDo#^zq7E.V~FVB"><mutation min="0" max="5000" label="StartFrequency" precision="0"></mutation><field name="SLIDER">1110</field></shadow></value><value name="endFrequency"><shadow type="math_number_minmax" id="`l^cwjTZVhzgqj5tU_sg"><mutation min="0" max="5000" label="EndFrequency" precision="0"></mutation><field name="SLIDER">2619</field></shadow></value><value name="duration"><shadow type="math_number_minmax" id="7_VEi|!BSY3Sx@BOZdd0"><mutation min="1" max="9999" label="Duration" precision="0"></mutation><field name="SLIDER">200</field></shadow></value><value name="startVolume"><shadow type="math_number_minmax" id="yfnn%~aEQS5+b}aq{;Bx"><mutation min="0" max="255" label="StartVolume" precision="0"></mutation><field name="SLIDER">138</field></shadow></value><value name="endVolume"><shadow type="math_number_minmax" id="vM29:+zmFHFKzX@Hy)}W"><mutation min="0" max="255" label="EndVolume" precision="0"></mutation><field name="SLIDER">0</field></shadow></value></shadow></value><next><block type="device_show_leds" id="K/L~n]5c?=#fzL{EUr(Y"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="device_show_leds" id="gj,/^-z;{--Xmh(y_b)6"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="serial_writeline" id="r^].a)AnukP[o=wAEnf8"><value name="text"><shadow type="text" id="/%+/NUAp4J5S]Xz$A`8a"><field name="TEXT">Mouth Opened</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
